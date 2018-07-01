@@ -4,6 +4,7 @@
   "description": "QQmusic",
   "main": "index.js",
   "scripts": {
+    "start": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,13 +12,14 @@
     "url": "git+https://github.com/Haluluyo/QQmusic.git"
   },
   "keywords": [],
-  "author": {
-    "name": "lijuan lu",
-    "email": "lulijuan_00@163.com"
-  },
+  "author": "lijuan lu <lulijuan_00@163.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Haluluyo/QQmusic/issues"
   },
-  "homepage": "https://github.com/Haluluyo/QQmusic#readme"
+  "homepage": "https://github.com/Haluluyo/QQmusic#readme",
+  "devDependencies": {
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
+  }
 }

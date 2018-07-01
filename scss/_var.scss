@@ -1,3 +1,6 @@
+/*放置变量*/
+$body-background: #f4f4f4;
+
 $header-height: 44px;
 $header-background: #31c27c;
 $header-logo-width: 90px;
@@ -9,3 +12,8 @@ $header-btn-radius: 99px;
 $header-btn-background: #149c5a;
 $header-btn-font: 14px;
 $header-btn-color: #fff;
+
+$topbar-padding: 10px;
+$topbar-color: rgba(0,0,0,.6);
+$topbar-active-border: 2px solid #31c27c;
+$topbar-active-color: #31c27c;

@@ -4,23 +4,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-#header h1{
-    display: none;
-}
-#header #logo{
-    width: $header-logo-width;
-    height: $header-logo-height;
-    margin-left: $header-logo-margin;
-}
-#header #btn-download{
-    display: inline-block;
-    height: $header-btn-height;
-    margin-right: $header-logo-margin;
-    padding: $header-btn-padding;
-    line-height: $header-btn-height;
-    border-radius: $header-btn-radius;
-    background: $header-btn-background;
-    font-size: $header-btn-font;
-    color: $header-btn-color;
+    h1{
+        display: none;
+    }
+    #logo{
+        width: $header-logo-width;
+        height: $header-logo-height;
+        margin-left: $header-logo-margin;
+    }
+    #btn-download{
+        display: inline-block;
+        height: $header-btn-height;
+        margin-right: $header-logo-margin;
+        padding: $header-btn-padding;
+        line-height: $header-btn-height;
+        border-radius: $header-btn-radius;
+        background: $header-btn-background;
+        font-size: $header-btn-font;
+        color: $header-btn-color;
+    }     
 } 

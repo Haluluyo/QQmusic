@@ -10,13 +10,44 @@
 <body>
     <header id="header">
         <h1>QQ 音乐</h1>
-        <img id="logo" src="https://y.gtimg.cn/mediastyle/mobile/yqq_v5/img/logo.png?max_age=19830212&d=20151105145423" alt="Logo">
+        <img id="logo" src="images/qqMusic_logo.png" alt="Logo">
       <a id="btn-download" href="#">下载APP</a>
     </header>
-    <ul class="topbar">
-      <li><a href="#">推荐</a></li>
-      <li><a href="#">排行榜</a></li>
-      <li><a href="#">搜索</a></li>
-    </ul>
+    <nav class="topbar">
+      <ul class="tabs-list">
+        <li class="tabs-item active" data-view=".rec-view" data-role="tab"><a href="#">推荐</a></li>
+        <li class="tabs-item" data-view=".rank-view" data-role="tab"><a href="#">排行榜</a></li>
+        <li class="tabs-item" data-view=".search-view" data-role="tab"><a href="#">搜索</a></li>
+      </ul>
+    </nav>
+    <div class="tab-contents">
+      <div class="rec-view tab-content">
+        <div class="qq-slider" id="slider">
+          <!--   <ul class="slider-wrap">
+                <li class="slider-items">
+                  <a href="#"><img src="images/image_Carousel_1.jpg" alt=""></a>
+                </li>
+                <li class="slider-items">
+                  <a href="#"><img src="images/image_Carousel_2.jpg" alt=""></a>
+                </li>
+                <li class="slider-items">
+                  <a href="#"><img src="images/image_Carousel_3.jpg" alt=""></a>
+                </li>
+                <li class="slider-items">
+                  <a href="#"><img src="images/image_Carousel_4.jpg" alt=""></a>
+                </li>
+                <li class="slider-items">
+                  <a href="#"><img src="images/image_Carousel_5.jpg" alt=""></a>
+                </li>
+              </ul> -->
+        </div>
+      </div>
+      <div class="rank-view tab-content hide">排行榜</div>
+      <div class="search-view tab-content hide">搜索</div>
+    </div>
+    
+    <script src="scripts/tab.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>

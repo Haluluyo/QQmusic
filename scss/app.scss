@@ -1,4 +1,12 @@
 @import "var";
 @import "reset";
+@import "helpers";
 @import "rec";
 @import "header";
+@import "topbar";
+@import "slider";
+
+body{
+    background: $body-background;
+}
+
