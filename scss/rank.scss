@@ -1,0 +1,76 @@
+.toplist {
+    .top-item{
+        display: flex;
+        height: $rank-list-height;
+        margin: $rank-list-mar;
+        background: $background-fff;
+ 
+        .top-item-media{
+            position: relative;
+            img{
+                width: $rank-list-height;
+                height: $rank-list-height;
+            }
+            .listen-count{
+                position: absolute;
+                bottom: $rank-icon-bottom;
+                left: $radio-icon-left;
+                color: $color-fff;
+                font-size: $radio-p;
+                .count-icon{
+                    display: inline-block;
+                    width: $radio-listen-icon-wid;
+                    height: $radio-listen-icon-wid; 
+                    background-image: url(/images/list_sprite.png);
+                    background-repeat: no-repeat;
+                    background-size: $radio-icon-size;
+                    background-position: 0 -50px;
+                }
+            }
+        }
+        .top-item-info{
+            position: relative;
+            width: 100%;
+            padding: $rank-info-pad;
+            h3{
+                font-size: $rank-info-h3;
+                color: $color-000;
+                font-weight: normal;
+                margin-bottom: $rank-info-mar;
+            }
+            .top-item-list {
+                font-size: $rank-info-list-size;
+                .top-item-song{
+                    height: $rank-info-list-height;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    .song-index{
+                        margin-right: $rank-info-list-idx;
+                    }
+                    .singer{
+                        color: $rank-info-singer-color;
+                    }
+                }
+            }
+            .more-arrow{
+                position: absolute;
+                right: $rank-arrow-right;
+                top: 50%;
+                margin-top: $rank-arrow-mar;
+                color: $rank-arrow-color;
+            }
+        }    
+    }
+}
+.toplist-more {
+    height: $rank-more-height;
+    line-height: $rank-more-height;
+    text-align: center;
+    a {
+        display: inline-block;
+        padding: $rank-more-pad;
+        font-size: $rank-more-size;
+        color: $rank-more-color;
+    }
+}

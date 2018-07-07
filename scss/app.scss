@@ -1,10 +1,11 @@
 @import "var";
 @import "reset";
 @import "helpers";
-@import "rec";
 @import "header";
 @import "topbar";
 @import "slider";
+@import "rec";
+@import "rank";
 
 body{
     background: $body-background;

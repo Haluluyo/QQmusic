@@ -1,5 +1,8 @@
 /*放置变量*/
 $body-background: #f4f4f4;
+$background-fff: #fff;
+$color-fff: #fff;
+$color-000: #000;
 
 $header-height: 44px;
 $header-background: #31c27c;
@@ -17,3 +20,39 @@ $topbar-padding: 10px;
 $topbar-color: rgba(0,0,0,.6);
 $topbar-active-border: 2px solid #31c27c;
 $topbar-active-color: #31c27c;
+
+$radio-mar:14px 10px 10px; 
+$radio-color: #000;
+$radio-title-font: 16px;
+$radio-title-mar: 11px;
+$radio-list-mar: 4px 3px;
+$radio-img-min-height: 150px;
+$radio-img-mar: 5px;
+$radio-ply-icon-wid: 24px;
+$radio-listen-icon-wid: 10px;
+$radio-icon-bottom: 51px;
+$radio-icon-left: 5px;
+$radio-icon-size: 24px 60px;
+$radio-info-mar: 0 7px 5px;
+$radio-info-height: 36px;
+$radio-info-lin-height: 18px;
+$radio-h3: 14px;
+$radio-p: 12px;
+
+$rank-list-height: 100px;
+$rank-list-mar: 10px;
+$rank-icon-bottom: 7px;
+$rank-info-pad: 7px 10px 6px 15px;
+$rank-info-h3: 16px;
+$rank-info-mar: 7px;
+$rank-info-list-size: 14px;
+$rank-info-list-height: 20px;
+$rank-info-list-idx: 5px;
+$rank-info-singer-color: rgba(0,0,0,.5);
+$rank-arrow-right: 10px;
+$rank-arrow-mar: -4px;
+$rank-arrow-color: #b2b2b2;
+$rank-more-height: 40px;
+$rank-more-pad: 0 10px;
+$rank-more-size: 14px;
+$rank-more-color: rgba(0,0,0,.6);

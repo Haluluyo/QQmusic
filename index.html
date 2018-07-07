@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/app.css">
-    <title>QQ音乐 - 千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/app.css">
+  <title>QQ音乐 - 千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台!</title>
 </head>
+
 <body>
-    <header id="header">
-        <h1>QQ 音乐</h1>
-        <img id="logo" src="images/qqMusic_logo.png" alt="Logo">
-      <a id="btn-download" href="#">下载APP</a>
-    </header>
-    <nav class="topbar">
-      <ul class="tabs-list">
-        <li class="tabs-item active" data-view=".rec-view" data-role="tab"><a href="#">推荐</a></li>
-        <li class="tabs-item" data-view=".rank-view" data-role="tab"><a href="#">排行榜</a></li>
-        <li class="tabs-item" data-view=".search-view" data-role="tab"><a href="#">搜索</a></li>
-      </ul>
-    </nav>
-    <div class="tab-contents">
-      <div class="rec-view tab-content">
-        <div class="qq-slider" id="slider">
-          <!--   <ul class="slider-wrap">
+  <header id="header">
+    <h1>QQ 音乐</h1>
+    <img id="logo" src="images/qqMusic_logo.png" alt="Logo">
+    <a id="btn-download" href="#">下载APP</a>
+  </header>
+  <nav class="topbar">
+    <ul class="tabs-list">
+      <li class="tabs-item active" data-view=".rec-view" data-role="tab">推荐</li>
+      <li class="tabs-item" data-view=".rank-view" data-role="tab">排行榜</li>
+      <li class="tabs-item" data-view=".search-view" data-role="tab">搜索</li>
+    </ul>
+  </nav>
+  <div class="tab-contents">
+    <div class="rec-view tab-content">
+      <div class="qq-slider" id="slider">
+        <!--   <ul class="slider-wrap">
                 <li class="slider-items">
                   <a href="#"><img src="images/image_Carousel_1.jpg" alt=""></a>
                 </li>
@@ -40,14 +42,100 @@
                   <a href="#"><img src="images/image_Carousel_5.jpg" alt=""></a>
                 </li>
               </ul> -->
-        </div>
       </div>
-      <div class="rank-view tab-content hide">排行榜</div>
-      <div class="search-view tab-content hide">搜索</div>
+      <div class="radio">
+        <h2 class="title">电台</h2>
+        <ul class="list">
+          <!--  <li class="list-item">
+              <a href="#">
+                <img src="https://y.gtimg.cn/music/photo/radio/track_radio_307_13_1.jpg?max_age=2592000" alt="">
+                <div class="icon play-icon"></div>
+              </a>
+              <div class="song-info">
+                <a href="#" target="_blank">
+                  <h3>一人一首招牌歌</h3>
+                  <p>一人一首招牌歌</p>
+                </a>
+              </div>
+            </li> 
+            <li class="list-item">
+              <a href="#">
+                <img src="https://y.gtimg.cn/music/photo/radio/track_radio_307_13_1.jpg?max_age=2592000" alt="">
+                <div class="icon play-icon"></div>
+              </a>
+              <div class="song-info">
+                <a href="#" target="_blank">
+                  <h3>一人一首招牌歌</h3>
+                  <p>一人一首招牌歌</p>
+                </a>
+              </div>
+            </li>  -->
+        </ul>
+      </div>
+      <div class="hot-list">
+        <h2 class="title">热门歌单</h2>
+        <ul class="list">
+        <!--    <li class="list-item">
+                  <a href="#">
+                    <img src="https://y.gtimg.cn/music/photo_new/T006R300x300M00000333So02drvak.jpg?max_age=2592000" alt="">
+                    <div class="listen-count">
+                      <span class="icon count-icon"></span>
+                      936.8万
+                    </div>
+                    <div class="icon play-icon"></div>
+                  </a>
+                  <div class="song-info">
+                    <a href="#" target="_blank">
+                      <h3>催泪大杀器！盘点演唱会经典万人大合唱</h3>
+                      <p>Harry</p>
+                    </a>
+                  </div>
+                </li>  -->
+        </ul>
+        <p class="toplist-more"><a href="#">去客户端发现更多好音乐 &gt;</a></p>
+      </div>
     </div>
-    
-    <script src="scripts/tab.js"></script>
-    <script src="scripts/slider.js"></script>
-    <script src="scripts/app.js"></script>
+    <div class="rank-view tab-content hide">
+      <ul class="toplist">
+      <!-- <li class="top-item">
+            <div class="top-item-media">
+              <a href="#">
+                <img class="lazyload" src="http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_4_300_214203128.jpg">
+              </a>
+              <div class="listen-count">
+                <span class="icon count-icon"></span>
+                2000.0万
+              </div>
+            </div>
+            <div class="top-item-info">
+              <h3 class="top-item-title ellipsis">巅峰榜·流行指数</h3>
+              <ul class="top-item-list">
+                <li class="top-item-song">
+                  <i class="song-index">1</i>
+                  傲红尘 <span class="singer">- 尤长靖</span>
+                </li>
+                <li class="top-item-song">
+                  <i class="song-index">2</i>
+                  爱难脱身 <span class="singer">- 谭维维</span>
+                </li>
+                <li class="top-item-song">
+                  <i class="song-index">3</i>
+                  做我自己 <span class="singer">- 王源</span>
+                </li>
+              </ul>
+              <span class="more-arrow">&gt;</span>
+            </div>
+          </li>  -->
+      </ul>
+      <p class="toplist-more"><a href="#">去客户端发现更多好音乐 &gt;</a></p>
+    </div>
+    <div class="search-view tab-content hide">搜索</div>
+  </div>
+
+  <script src="scripts/tab.js"></script>
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/lazyload.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
+
 </html>

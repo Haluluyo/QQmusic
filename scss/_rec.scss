@@ -1,0 +1,113 @@
+.radio, .hot-list{
+    margin: $radio-mar; 
+    .title{
+        color: $radio-color;
+        font-size: $radio-title-font;
+        margin-bottom: $radio-title-mar;
+    }
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+        .list-item{
+            position: relative;
+            flex: 1;
+            flex-basis: 40%;
+            width: 0;
+            margin: $radio-list-mar;
+            background: $background-fff;
+            img{
+                width: 100%;
+                margin-bottom: $radio-img-mar;
+                display: block;
+                min-height: $radio-img-min-height;
+            }
+            .icon{
+                display: inline-block;
+                background-image: url(/images/list_sprite.png);
+                background-repeat: no-repeat;
+                background-size: $radio-icon-size;
+             }
+             .listen-count{
+                position: absolute;
+                bottom: $radio-icon-bottom;
+                left: $radio-icon-left;
+                color: $color-fff;
+                font-size: $radio-p;
+             }
+             .count-icon{
+                width: $radio-listen-icon-wid;
+                height: $radio-listen-icon-wid;
+                background-position: 0 -50px;
+             }
+             .play-icon{
+                position: absolute;
+                width: $radio-ply-icon-wid;
+                height: $radio-ply-icon-wid;
+                bottom: $radio-icon-bottom;
+                right: $radio-icon-left;
+                background-position: 0 0;
+             }
+            .song-info{
+                margin: $radio-info-mar;
+                height: $radio-info-height;
+                line-height: $radio-info-lin-height;
+                a{ 
+                    color: $radio-color;
+                }
+                h3{
+                    font-size: $radio-h3;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                p{
+                    font-size: $radio-p;
+                }
+            }
+        }
+        
+    }
+}
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
