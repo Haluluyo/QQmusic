@@ -75,7 +75,7 @@
       <div class="hot-list">
         <h2 class="title">热门歌单</h2>
         <ul class="list">
-        <!--    <li class="list-item">
+          <!--    <li class="list-item">
                   <a href="#">
                     <img src="https://y.gtimg.cn/music/photo_new/T006R300x300M00000333So02drvak.jpg?max_age=2592000" alt="">
                     <div class="listen-count">
@@ -86,18 +86,20 @@
                   </a>
                   <div class="song-info">
                     <a href="#" target="_blank">
-                      <h3>催泪大杀器！盘点演唱会经典万人大合唱</h3>
+                      <h3 class="ellipsis">催泪大杀器！盘点演唱会经典万人大合唱</h3>
                       <p>Harry</p>
                     </a>
                   </div>
                 </li>  -->
         </ul>
-        <p class="toplist-more"><a href="#">去客户端发现更多好音乐 &gt;</a></p>
+        <p class="toplist-more">
+          <a href="#">去客户端发现更多好音乐 &gt;</a>
+        </p>
       </div>
     </div>
     <div class="rank-view tab-content hide">
       <ul class="toplist">
-      <!-- <li class="top-item">
+        <!-- <li class="top-item">
             <div class="top-item-media">
               <a href="#">
                 <img class="lazyload" src="http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_4_300_214203128.jpg">
@@ -127,15 +129,93 @@
             </div>
           </li>  -->
       </ul>
-      <p class="toplist-more"><a href="#">去客户端发现更多好音乐 &gt;</a></p>
+      <p class="toplist-more">
+        <a href="#">去客户端发现更多好音乐 &gt;</a>
+      </p>
     </div>
-    <div class="search-view tab-content hide">搜索</div>
+    <div class="search-view tab-content hide">
+      <div class="search-bar">
+        <div class="search-input">
+          <input id="search" type="text" placeholder="搜索歌曲、歌单、专辑">
+          <span class="search-icon"></span>
+          <span class="delete-icon hide"></span>
+        </div>
+        <div class="search-cancel hide">取消</div>
+      </div>
+      <div class="search-hotkeys">
+        <h3 class="hot-tit">热门搜索</h3>
+        <div class="result-tags">
+        <!--
+          <a href="#" class="tag tag-hot">明日之子</a>
+          <a href="#" class="tag tag-keyword">DREAM IT POSSIBLE </a>
+          <a href="#" class="tag tag-keyword">给陌生的你听 </a>
+          <a href="#" class="tag tag-keyword">烟火里的尘埃 </a>
+          <a href="#" class="tag tag-keyword">9277 </a>
+          <a href="#" class="tag tag-keyword">你要的全拿走 </a>
+          <a href="#" class="tag tag-keyword">不仅仅是喜欢 </a>
+          <a href="#" class="tag tag-keyword">私奔 </a>
+        -->
+        </div>
+      </div>
+      <div class="search-record hide">
+        <ul class="record-list">
+        <!--
+          <li>
+            <a href="#" class="record-main">
+              <span class="icon icon-clock"></span>
+              <span class="record-content ellipsis">薛之谦</span>
+              <span class="icon icon-close"></span>
+            </a>
+          </li>
+        -->
+        </ul>
+        <p class="record-delete">清除搜索记录</p>
+      </div>
+      <div class="search-results">
+        <ul class="song-list">
+        <!--
+          <li class="singer-intro">
+            <a class="song-item" href="#">
+              <img class="avatar" src="https://y.gtimg.cn/music/photo_new/T001R68x68M000002J4UUk29y8BY.jpg?max_age=2592000">
+              <div class="song-name ellipsis">薛之谦</div>
+              <div class="song-artist ellipsis">
+                  单曲：<span class="song-count">204</span>&nbsp;&nbsp;&nbsp;专辑：<span class="album-count">20</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="song-item" href="#">
+              <i class="icon icon-music"></i>
+              <div class="song-name ellipsis">丑八怪</div>
+              <div class="song-artist ellipsis">薛之谦</div>
+            </a>
+          </li>
+          <li>
+            <a class="song-item" href="#">
+              <i class="icon icon-music"></i>
+              <div class="song-name ellipsis">演员</div>
+              <div class="song-artist ellipsis">薛之谦</div>
+            </a>
+          </li>
+        -->
+        </ul>
+      </div>
+      <div class="search-loading">
+        <i class="loading-icon"></i>
+        <div class="loading-text">正在载入更多...  </div>
+        <div class="loading-done hide">已加载全部</div>
+      </div>
+    </div>
   </div>
 
   <script src="scripts/tab.js"></script>
   <script src="scripts/slider.js"></script>
   <script src="scripts/lazyload.js"></script>
+  <script src="scripts/search.js"></script>
+  
+  <script src="scripts/hotKey.js"></script>
   <script src="scripts/app.js"></script>
+
 </body>
 
 </html>

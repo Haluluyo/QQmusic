@@ -1,5 +1,9 @@
 //ES6
 (function () {
+
+    let search = new Search(document.querySelector('.search-view'))
+    let hotKey = new HotKey(document.querySelector('.result-tags')).start()
+
     fetch('/json/rec.json')
         .then(res => res.json())
         .then(render)
@@ -9,7 +13,6 @@
         .then(json => json.data.topList)
         .then(renderTopList)
 
-
     function render(json) {
         renderSlider(json.data.slider)
         renderRadios(json.data.radioList)
@@ -17,6 +20,7 @@
         lazyload(document.querySelectorAll('.lazyload'))
     }
 
+    
     function renderSlider(slides) {
         slides = slides.map(slider => {
             return { link: slider.linkUrl, image: slider.picUrl }
@@ -68,7 +72,7 @@
               </a>
               <div class="song-info">
                 <a href="#" target="_blank">
-                  <h3>${songlist.songListDesc}</h3>
+                  <h3 class="ellipsis">${songlist.songListDesc}</h3>
                   <p>${songlist.songListAuthor}</p>
                 </a>
               </div>
@@ -101,9 +105,9 @@
         function songlist(songs){
             return songs.map((song, i) =>
                 `<li class="top-item-song">
-                        <i class="song-index">${i+1}</i>
-                        ${song.songname} <span class="singer">- ${song.singername}</span>
-                        </li>`
+                    <i class="song-index">${i+1}</i>
+                    ${song.songname} <span class="singer">- ${song.singername}</span>
+                </li>`
             ).join('')
         }
         

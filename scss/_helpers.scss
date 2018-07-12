@@ -1,3 +1,11 @@
 .hide{
     display: none;
 }
+.none {
+    display: none!important;
+}
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
