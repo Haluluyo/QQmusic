@@ -3,6 +3,7 @@ class Search{
         this.$el = el
         this.$input = this.$el.querySelector('#search')
         this.$songs = this.$el.querySelector('.song-list')
+        //this.$el.addEventListener("click", this.onClick.bind(this));
         this.$input.addEventListener('keyup',this.onKeyUp.bind(this))
         this.keyword = ''
         this.page = 1 
@@ -50,8 +51,8 @@ class Search{
           .then(json => {
             this.page = json.data.song.curpage
             this.nomore = (json.message === 'no results') 
-            //this.songs.push.apply(this.songs, json.data.song.list)
-            //json.data.song.list是数组，需apply展开才能将内容push到songs数组中
+            /* this.songs.push.apply(this.songs, json.data.song.list)
+               json.data.song.list是数组，需apply展开才能将内容push到songs数组中 */
             this.songs.push(...json.data.song.list)
             return json.data.song.list
           })
@@ -66,7 +67,7 @@ class Search{
             <a class="song-item" href="#">
                 <i class="icon icon-music"></i>
                 <div class="song-name ellipsis">${song.songname}</div>
-                <div class="song-artist ellipsis">${song.singer.map(s => s.name).join('')}</div> 
+                <div class="song-artist ellipsis">${song.singer.map(s => s.name).join('')}/</div> 
             </a>
           </li>
         `).join('')
