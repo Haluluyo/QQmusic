@@ -72,7 +72,8 @@ app.get('/lyrics',async(req,res) => {
     const url = `https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric.fcg?nobase64=1&musicid=${id}&songtype=${type || 0}`
     //丑八怪 歌词id对应curl中的musicid 5106429
     try{
-      let text = (await request({
+      let text = 
+      (await request({
             uri: url,
             headers: {
                 'accept': '*/*',

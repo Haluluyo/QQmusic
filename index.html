@@ -13,7 +13,10 @@
   <header id="header">
     <h1>QQ 音乐</h1>
     <img id="logo" src="images/qqMusic_logo.png" alt="Logo">
-    <a id="btn-download" href="#">下载APP</a>
+    <div>
+      <a class="head-btn" id="btn-player" href="#">播放器</a>
+      <a class="head-btn" id="btn-download" href="#">下载APP</a>
+    </div>
   </header>
   <nav class="topbar">
     <ul class="tabs-list">
@@ -145,7 +148,7 @@
       <div class="search-hotkeys">
         <h3 class="hot-tit">热门搜索</h3>
         <div class="result-tags">
-        <!--
+          <!--
           <a href="#" class="tag tag-hot">明日之子</a>
           <a href="#" class="tag tag-keyword">DREAM IT POSSIBLE </a>
           <a href="#" class="tag tag-keyword">给陌生的你听 </a>
@@ -159,7 +162,7 @@
       </div>
       <div class="search-record hide">
         <ul class="record-list">
-        <!--
+          <!--
           <li>
             <a href="#" class="record-main">
               <span class="icon icon-clock"></span>
@@ -173,7 +176,7 @@
       </div>
       <div class="search-results">
         <ul class="song-list">
-        <!--
+          <!--
           <li class="singer-intro">
             <a class="song-item" href="#">
               <img class="avatar" src="https://y.gtimg.cn/music/photo_new/T001R68x68M000002J4UUk29y8BY.jpg?max_age=2592000">
@@ -202,17 +205,83 @@
       </div>
       <div class="search-loading">
         <i class="loading-icon"></i>
-        <div class="loading-text">正在载入更多...  </div>
+        <div class="loading-text">正在载入更多... </div>
         <div class="loading-done hide">已加载全部</div>
       </div>
     </div>
   </div>
 
+  <div class="player show">
+    <div class="player-container">
+      <div class="player-header">
+        <img class="album-cover" src="https://y.gtimg.cn/music/photo_new/T002R150x150M000000QgFcm0v8WaF.jpg">
+        <div class="song-info">
+          <div class="song-name ellipsis">丑八怪</div>
+          <div class="song-artist ellipsis">薛之谦</div>
+        </div>
+        <span class="icon-action icon-pause"></span>
+      </div>
+      <div class="player-lyrics">
+        <div class="player-lyrics-lines">
+          <div class="player-lyrics-line">丑八怪 (《如果我爱你》电视剧插曲) - 薛之谦 (Joker)</div>
+          <div class="player-lyrics-line">词：甘世佳</div>
+          <div class="player-lyrics-line">曲：李荣浩</div>
+          <div class="player-lyrics-line active">编曲：李荣浩</div>
+          <div class="player-lyrics-line">如果世界漆黑 其实我很美</div>
+          <div class="player-lyrics-line">在爱情里面进退 最多被消费</div>
+          <div class="player-lyrics-line">无关痛痒的是非</div>
+          <div class="player-lyrics-line">又怎么不对 无所谓</div>
+          <div class="player-lyrics-line">如果像你一样 总有人赞美</div>
+          <div class="player-lyrics-line">围绕着我的卑微 也许能消退</div>
+          <div class="player-lyrics-line">其实我并不在意 有很多机会</div>
+          <div class="player-lyrics-line">像巨人一样的无畏</div>
+          <div class="player-lyrics-line">放纵我 心里的鬼</div>
+          <div class="player-lyrics-line">可是我不配</div>
+          <div class="player-lyrics-line">丑八怪 能否别把灯打开</div>
+          <div class="player-lyrics-line">我要的爱 出没在</div>
+          <div class="player-lyrics-line">漆黑一片的舞台</div>
+          <div class="player-lyrics-line">丑八怪 在这暧昧的时代</div>
+          <div class="player-lyrics-line">我的存在 像意外</div>
+          <div class="player-lyrics-line">有人用一滴泪 会红颜祸水</div>
+          <div class="player-lyrics-line">有人丢掉称谓 什么也不会</div>
+          <div class="player-lyrics-line">只要你足够虚伪 就不怕魔鬼 对不对</div>
+          <div class="player-lyrics-line">如果剧本写好 谁比谁高贵</div>
+          <div class="player-lyrics-line">我只能沉默以对 美丽本无罪</div>
+          <div class="player-lyrics-line">当欲望开始贪杯 有更多机会</div>
+          <div class="player-lyrics-line">像尘埃一样的无畏 化成灰 谁认得谁</div>
+          <div class="player-lyrics-line">管他配不配</div>
+          <div class="player-lyrics-line">丑八怪 能否别把灯打开</div>
+          <div class="player-lyrics-line">我要的爱 出没在</div>
+          <div class="player-lyrics-line">漆黑一片的舞台</div>
+          <div class="player-lyrics-line">丑八怪 在这暧昧的时代</div>
+          <div class="player-lyrics-line">我的存在 不意外</div>
+          <div class="player-lyrics-line">丑八怪 其实见多就不怪</div>
+          <div class="player-lyrics-line">放肆去high 用力踩</div>
+          <div class="player-lyrics-line">那不堪一击的洁白</div>
+          <div class="player-lyrics-line">丑八怪 这是我们的时代</div>
+          <div class="player-lyrics-line">我不存在 才意外</div>
+        </div>
+      </div>
+      <div class="player-footer">
+        <div class="icon-list"></div>
+        <div class="progress">
+          <div class="progress-time progress-elapsed">00:00</div>
+          <div class="progress-bar">
+            <div class="progress-bar-progress"></div>
+          </div>
+          <div class="progress-time progress-duration">04:08</div>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn-download">下载这首歌</a>
+        </div>
+      </div>
+    </div>
+    <div class="player-background"></div>
+  </div>
   <script src="scripts/tab.js"></script>
   <script src="scripts/slider.js"></script>
   <script src="scripts/lazyload.js"></script>
   <script src="scripts/search.js"></script>
-  
   <script src="scripts/hotKey.js"></script>
   <script src="scripts/app.js"></script>
 
