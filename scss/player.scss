@@ -50,7 +50,7 @@
             flex-direction: column;
             justify-content: center;
             max-width: calc(100% - 150px);
-            color: #fff;
+            color: $color-fff;
             .song-name {
                height: 30px;
                font-size: 18px;
@@ -64,12 +64,12 @@
         .icon-action {
             width: 44px;
             height: 44px;
-            border: solid 1px #fff;
+            border: solid 1px $color-fff;
             border-radius: 50%;
             background: rgba(0,0,0,.1);
             opacity: .6;
             margin-right: 10px;
-            background-image: url(https://upload-images.jianshu.io/upload_images/6426975-eaea608e9f53fd85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/80);
+            background-image: url(/images/sprite_play.png);
             background-repeat: no-repeat;
             background-size: 40px 380px;
         }
@@ -113,7 +113,7 @@
             right: 13px;
             top: -40px;
             position: absolute;
-            background-image: url(https://upload-images.jianshu.io/upload_images/6426975-eaea608e9f53fd85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/80);
+            background-image: url(/images/sprite_play.png);
             background-repeat: no-repeat;
             background-size: 40px 380px;
            background-position: 8px -250px;
@@ -131,6 +131,9 @@
                 text-align: center;
                 letter-spacing: 1px;
             }
+
+
+            
             .progress-bar {
                 flex: 1;
                 overflow: hidden;
@@ -140,7 +143,7 @@
                     height: 2px;
                     transform: translateX(-100%);
                     background: #31c27c;
-                    transform: translate(-90.7056%);
+                    //transform: translate(-90.7056%);
                 }
             }
         }
@@ -157,11 +160,11 @@
                 overflow: hidden;
                 white-space: nowrap;
                 font-size: 20px;
-                color: #fff;
+                color: $color-fff;
                 border-radius: 999px;
                 background-color: #31c27c;
                 text-align: center;
-                background-image: url(https://upload-images.jianshu.io/upload_images/6426975-eaea608e9f53fd85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/80);
+                background-image: url(/images/sprite_play.png);
                 background-repeat: no-repeat;
                 background-size: 43px 380px;
                 background-position: 6px -321px;
