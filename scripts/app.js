@@ -4,7 +4,6 @@
     let search = new Search(document.querySelector('.search-view'))
     let hotKey = new HotKey(document.querySelector('.result-tags')).start()
     let player = new MusicPlayer(document.querySelector('.player')) 
-    let progress = new ProgressBar(document.querySelector('.player')) //进度条
 
     fetch('/json/rec.json')
         .then(res => res.json())
