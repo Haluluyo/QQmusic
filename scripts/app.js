@@ -5,6 +5,10 @@
     let hotKey = new HotKey(document.querySelector('.result-tags')).start()
     let player = new MusicPlayer(document.querySelector('.player')) 
 
+    document.querySelector('#btn-player').addEventListener('click', () => {
+        player.show()
+    })
+
     fetch('/json/rec.json')
         .then(res => res.json())
         .then(render)
