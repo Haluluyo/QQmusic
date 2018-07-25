@@ -1,4 +1,8 @@
 //播放器界面
+
+//location.hash --#player?artist=%E8%96%9B%E4%B9%8B%E8%B0%A6&songid=5106429&songname=%E4%B8%91%E5%85%AB%E6%80%AA&albummid=000QgFcm0v8WaF&duration=248
+  location.hash.slice(location.hash.indexOf('?')+1)
+  location.hash.slice(location.hash.indexOf('?')+1).match(/(\w+)=([^&]+)/g)
 class MusicPlayer {
     constructor(el){
         this.$el = el

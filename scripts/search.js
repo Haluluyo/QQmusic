@@ -64,7 +64,7 @@ class Search{
     append(songs){
         let html = songs.map(song => `
           <li>
-            <a class="song-item" href="#">
+            <a class="song-item" href="#player?artist=${song.singer.map(s => s.name).join('')}&songid=${song.songid}&songname=${song.songname}&albummid=${song.albummid}&duration=${song.interval}">
                 <i class="icon icon-music"></i>
                 <div class="song-name ellipsis">${song.songname}</div>
                 <div class="song-artist ellipsis">${song.singer.map(s => s.name).join('')}/</div> 
