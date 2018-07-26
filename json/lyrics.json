@@ -1,4 +1,4 @@
-jsonp1({
+jsonp({
     "retcode": 0,
     "code": 0,
     "subcode": 0,
