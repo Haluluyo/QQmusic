@@ -1,8 +1,14 @@
 # QQmusic
+
+在当前目录下运行以下命令：
+```
+http-server
+nodemon server.js
+```
 ## ES6写法
 
 ## 技术栈
-ES6 + Webpack + Sass + Nodejs + Express + Babel + Cors + Request
+ES6 + Webpack + Sass + Nodejs + Express
 ## 实现功能
 - 移动 web 端模仿 QQ 音乐，采用原生 JS 实现推荐页、排行榜页和搜索页
 - 数据通过伪造请求获取 QQ 音乐的数据，实现推荐页、排行榜页和搜索页的同步,以及获取歌曲歌词
